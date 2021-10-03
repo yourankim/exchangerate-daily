@@ -44,10 +44,10 @@ const getCurInfo = async () => {
   const sendMessage = async (message) => {  
     try {
       const response = await axios.post(process.env.SLACK_HOOK_URI, {text: message });
-      console.log("sendMessage - success!");
+      return "sendMessage - success!";
     } catch (e) {
-      console.error("sendMessage - fail: ", e.message);
-      console.log(e);
+      console.error("sendMessage:", e);
+      return "sendMessage - fail: ", e.message;
     }
   }
 
