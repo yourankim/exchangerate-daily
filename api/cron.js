@@ -1,4 +1,4 @@
-import { generateMessage, sendMessage } from '../src/service';
+import { generateMessage, sendMessage } from '../src/service.js';
 
 const cron = (req, res) => {
     const message = await generateMessage();
