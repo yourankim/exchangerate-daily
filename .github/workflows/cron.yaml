@@ -9,4 +9,4 @@ jobs:
       - name: Call our API route
         run: |
           curl --request GET \
-          --url 'https://exhangerate-daily.vercel.app/api/cron' 
+          --url 'https://exchangerate-daily.vercel.app/api/cron' 
